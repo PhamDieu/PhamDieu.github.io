@@ -12,7 +12,7 @@ div{
 #anh
     {
         position: absolute;
-        border-radius: 50px 50px 50px 50px;
+       
     }
     #anh:hover{
         animation: abc 2s infinite;
