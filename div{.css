@@ -12,6 +12,7 @@ div{
 #anh
     {
         position: absolute;
+        border: 50px 50px 50px 50px;
     }
     #anh:hover{
         animation: abc 3s infinite;
