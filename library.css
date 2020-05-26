@@ -1,0 +1,261 @@
+*
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+body
+{
+    margin: 0px;
+    background-color: white;
+    font-family: Arial;
+    font-size: 14px;
+}
+a   /* a:hover không gạch chân dưới thẻ a*/
+{
+    text-decoration: none;
+}
+ul,ol 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    margin: 0 0 10px 0;
+}
+p
+{
+    margin: 0 0 10px 0;
+}
+
+.clearfix:before
+{
+    content: "";
+    display: table-cell;
+}
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container
+{ 
+    max-width: 980px;  /* rộng tối đa 980px*/
+}
+.container-cencer
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* trên dưới, trái phải , hàng cột
+*/
+  /* chia khối trong phạm vi nhỏ */
+.ht-flex            /* giúp giàn đều trên 1 hàng */
+{         
+    display: -ms-flexbox;     
+    display: -webkit-flex;
+    display: flex;
+}
+.ht-flex-top        /*  */
+{
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+.ht-flex-middle
+{
+    -ms-flex-align: center;
+    -webkit-align-items: cencer;
+    align-items: center ;
+}
+.ht-flex-space-between      
+{
+    -ms-flex-pack: justify;
+    -webkit-justity-content: space-between;
+    justify-content: space-between;
+}
+.ht-flex-bottom         /*  */
+{
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+ /*   
+ 
+ pdding : khoảng cách phần tử con vào phần tử mẹ
+ margin  : khoảng cách 2 phần tử liền kề nhau , cùng cấp
+ 
+ */
+ .text-align-cencer
+ {
+    text-align: center;
+ }
+ .display-inline
+ {
+    display: inline;
+ }
+ .display-block
+ {
+    display: block;
+ }
+ .display-inline-block
+ {
+    display: inline-block;
+ }
+
+ .p0{padding: 0;}.p5{padding: 5px;}.p10{padding: 10px;}.p15{padding: 15px;}.p20{padding: 20px;}.p25{padding: 25px;}.p30{padding: 30px;}
+ .pl0{padding-left: 0;}.pl5{padding-left: 5px;}.pl10{padding-left: 10px;}.pl15{padding-left: 15px;}.pl20{padding-left: 20px;}.pl25{padding-left: 25px;}.pl30{padding-left: 30px;}
+ .pr0{padding-right: 0;}.pr5{padding-right: 5px;}.pr10{padding-right: 10px;}.pr15{padding-right: 15px;}.pr20{padding-right: 20px;}.pr25{padding-right: 25px;}.pr30{padding-right: 30px;}
+ .pt0{padding-top: 0;}.pt5{padding-top: 5px;}.pt10{padding-top: 10px;}.pt15{padding-top: 15px;}.pt20{padding-top: 20px;}.pt25{padding-top: 25px;}.pt30{padding-top: 30px;}
+ .pb0{padding-bottom: 0;}.pb5{padding-bottom: 5px;}.pb10{padding-bottom: 10px;}.pb15{padding-bottom: 15px;}.pb20{padding-bottom: 20px;}.pb25{padding-bottom: 25px;}.pb30{padding-bottom: 30px;}
+
+ .m0{margin: 0;}.m5{margin: 5px;}.m10{margin: 10px;}.m15{margin: 15px;}.m20{margin: 20px;}.m25{margin: 25px;}.m30{margin: 30px;}
+ .ml0{margin-left: 0;}.ml5{margin-left: 5px;}.ml10{margin-left: 10px;}.ml15{margin-left: 15px;}.ml20{margin-left: 20px;}.ml25{margin-left: 25px;}.ml30{margin-left: 30px;}
+ .mr0{margin-right: 0;}.mr5{margin-right: 5px;}.mr10{margin-right: 10px;}.mr15{margin-right: 15px;}.mr20{margin-right: 20px;}.mr25{margin-right: 25px;}.mr30{padding-right: 30px;}
+ .mt0{margin-top: 0;}.mt5{margin-top: 5px;}.mt10{margin-top: 10px;}.mt15{margin-top: 15px;}.mt20{margin-top: 20px;}.mt25{padding-top: 25px;}.mt30{margin-top: 30px;}
+ .mb0{margin-bottom: 0;}.mb5{margin-bottom: 5px;}.mb10{margin-bottom: 10px;}.mb15{margin-bottom: 15px;}.mb20{margin-bottom: 20px;}.mb25{margin-bottom: 25px;}.mb30{margin-bottom: 30px;}
+
+ .bg-gray
+ {
+    background-color: gray;
+ }
+.bg-white
+{
+    background-color: #fff;
+}
+.bg-black-1
+{
+    background-color: #111;
+}
+.bg-black-2
+{
+    background-color: #222;
+}
+.bg-black
+{
+    background-color: #000;
+}
+ /*======IMage======   */
+
+.img-cover{ display: block; width: 100%; height: 100%;}
+.image-cover img{display: block; width: 100%; height: 100%;object-fit: cover; }
+.img-scaledown{display: block; width: 100%; height: 100%;}
+.img-scaledown img{display: block; width: 100%; height: 100%; object-fit: scale-down;}
+
+/* ===GRID== */
+.grid
+{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ht-grid-width-1-2
+{
+    margin-left: -10px;
+}
+.ht-grid-width-1-2 >li
+{
+    width: 50%;
+    padding-left: 10px;
+}
+.ht-grid-width-1-3
+{
+    margin-left: -10px;
+}
+.ht-grid-width-1-3 >li
+{
+    width: 33.33%;
+    padding-left: 10px;
+}
+.ht-grid-width-1-4
+{
+    margin-left: -10px;
+}
+.ht-grid-width-1-4 >li
+{
+    width: 25%;
+    padding-left: 10px;
+}
+.ht-grid-width-1-5
+{
+    margin-left: -10px;
+}
+.ht-grid-width-1-5 >li
+{
+    width: 20%;
+    padding-left: 10px;
+}
+.ht-grid-width-1-6
+{
+    margin-left: -10px;
+}
+.ht-grid-width-1-6 >li
+{
+    width: 16,66%;
+    padding-left: 10px;
+}
+.ht-grid-width-1-10
+{
+    margin-left: -10px;
+}
+.ht-grid-width-1-10 >li
+{
+    width: 10%;
+    padding-left: 10px;
+}
+
+.ht-grid-collapse
+{
+    margin-left: 0;
+}
+.ht-grid-collapse >li
+{
+    padding-left: 0;
+}
+
+.ht-grid-small
+{
+    margin-left: -10px;
+}
+.ht-grid-small >li
+{
+    padding-left: 10px;
+}
+.ht-grid-medium
+{
+    margin-left: -20px;
+}
+.ht-grid-medium >li
+{
+    padding-left: 20px;
+}
+.ht-grid-large
+{
+    margin-left: -30px;
+}
+.ht-grid-large >li
+{
+    padding-left: 30px;
+}
+.ht-grid-xlarge
+{
+    margin-left: -40px;
+}
+.ht-grid-xlarge >li
+{
+    padding-left: 40px;
+}
+
+
+

@@ -1,98 +1,54 @@
-.pc-header
+.container-fix
 {
-    background: #fff;
-    font-size: 14px;
-    font-family:  Arial;
-    font-weight: nomal;
-
+    width: 600px;
 }
-.container
+.news-item 
 {
-    width: 1220px;
-}
- /* MAIN_NAV */
-
-.main-nav
-{
-    background: #111111;
-    padding: 10px 0;
-}
-.main-menu a
-{
-    display: block;
-}
-.main-menu li
-{
-    position: relative;
-}
-.main-menu >li
-{
-    float: left;
-    padding: 5px 0;
-}
-.main-menu >li >a
-{
-   
-    padding: 10px 25px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-    font-size: 13px;
-}
-.main-menu >li:hover >a
-{
-    background: #fff;
-    color: #333;
-    border-radius: 100px;
-}
-
-.main-menu .dropdown-menu
-{
-    position: absolute;
-    top: calc(100% + 10px );
-    left: 0;
-    width: 230px;
-    background: #f5150e;
-    display: none;
-
-} 
-.main-menu >li:hover > .dropdown-menu
-{
-    display: block;   
-}
-.main-menu .dropdown-menu .submenu-2 >li >a,
-.main-menu .dropdown-menu .submenu >li >a
-{
+    border: 1px solid #ccc;
     padding: 10px;
-    color: #fff;
-    font-size: 13px;
-    transition: all 0.5s ease;
-    
 }
-.main-menu .dropdown-menu .submenu-2 >li:hover >a,
-.main-menu .dropdown-menu .submenu >li:hover >a
+.news-item .image
 {
-    background: #333;
-    color: #fff;
-    padding-left: 15px;
+    width: 100px;
+    float: left;
 }
-.main-menu .dropdown-menu .submenu-2
+.news-item .info
 {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 230px;
-    background: #cb1d26;
-    display: none;
+    width: calc(100% - 100px);
+    padding-left: 10px;
+    float: left;
 }
-.main-menu .dropdown-menu .submenu >li:hover > .submenu-2
+.news-item .infor .title 
 {
-    display: block;
+    color: #333;
+
 }
-.main-menu .dropdown-menu .submenu .submenu-2 >li:hover > .submenu-2
+.news-item .info .description
 {
-    display: block;
+    font-size: 14px;
+    line-height: 25px;
 }
 
-
-
+.news-item.skin-2 .image 
+{
+    width: 100%;
+    float: none;
+    height: 100px;
+}
+.news-item.skin-2 .info
+{
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+.news-item.skin-3 .image 
+{
+    width: 100px;
+    float: right;
+}
+.news-item.skin-3 .info
+{
+    width: calc(100% - 100px);
+    padding-left: 10px;
+    float: right;
+}
